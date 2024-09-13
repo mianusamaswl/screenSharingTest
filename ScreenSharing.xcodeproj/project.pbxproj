@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182AB5FB2C90FEEA00308476 /* ScreenSharingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB5FA2C90FEEA00308476 /* ScreenSharingApp.swift */; };
+		182AB5FD2C90FEEA00308476 /* ScreenRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB5FC2C90FEEA00308476 /* ScreenRecordingView.swift */; };
+		182AB5FF2C90FEEB00308476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182AB5FE2C90FEEB00308476 /* Assets.xcassets */; };
+		182AB6022C90FEEB00308476 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182AB6012C90FEEB00308476 /* Preview Assets.xcassets */; };
+		182AB60C2C90FEEB00308476 /* ScreenSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB60B2C90FEEB00308476 /* ScreenSharingTests.swift */; };
+		182AB6162C90FEEB00308476 /* ScreenSharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB6152C90FEEB00308476 /* ScreenSharingUITests.swift */; };
+		182AB6182C90FEEB00308476 /* ScreenSharingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB6172C90FEEB00308476 /* ScreenSharingUITestsLaunchTests.swift */; };
+		182AB6272C9101B000308476 /* BroadcastActivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB6262C9101B000308476 /* BroadcastActivityHandler.swift */; };
+		182AB6312C9109E900308476 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182AB6302C9109E900308476 /* ReplayKit.framework */; };
+		182AB6342C9109E900308476 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB6332C9109E900308476 /* SampleHandler.swift */; };
+		182AB63B2C9109E900308476 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182AB6302C9109E900308476 /* ReplayKit.framework */; };
+		182AB63D2C9109E900308476 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182AB63C2C9109E900308476 /* UIKit.framework */; };
+		182AB6402C9109E900308476 /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AB63F2C9109E900308476 /* BroadcastSetupViewController.swift */; };
+		182AB6442C9109E900308476 /* ScreenShareExtensionSetupUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 182AB63A2C9109E900308476 /* ScreenShareExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		182AB6472C9109E900308476 /* ScreenShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 182AB62E2C9109E900308476 /* ScreenShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18F282402C9398BF0097695F /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 18F2823F2C9398BF0097695F /* StreamVideo */; };
+		18F282422C9398BF0097695F /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 18F282412C9398BF0097695F /* StreamVideoSwiftUI */; };
+		18F282442C9398BF0097695F /* StreamVideoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 18F282432C9398BF0097695F /* StreamVideoUIKit */; };
+		18F2824C2C93A46B0097695F /* CallingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F2824B2C93A46B0097695F /* CallingVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182AB6082C90FEEB00308476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182AB5EF2C90FEEA00308476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182AB5F62C90FEEA00308476;
+			remoteInfo = ScreenSharing;
+		};
+		182AB6122C90FEEB00308476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182AB5EF2C90FEEA00308476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182AB5F62C90FEEA00308476;
+			remoteInfo = ScreenSharing;
+		};
+		182AB6422C9109E900308476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182AB5EF2C90FEEA00308476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182AB6392C9109E900308476;
+			remoteInfo = ScreenShareExtensionSetupUI;
+		};
+		182AB6452C9109E900308476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182AB5EF2C90FEEA00308476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182AB62D2C9109E900308476;
+			remoteInfo = ScreenShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		182AB64E2C9109E900308476 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				182AB6472C9109E900308476 /* ScreenShareExtension.appex in Embed Foundation Extensions */,
+				182AB6442C9109E900308476 /* ScreenShareExtensionSetupUI.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		182AB5F72C90FEEA00308476 /* ScreenSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		182AB5FA2C90FEEA00308476 /* ScreenSharingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingApp.swift; sourceTree = "<group>"; };
+		182AB5FC2C90FEEA00308476 /* ScreenRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordingView.swift; sourceTree = "<group>"; };
+		182AB5FE2C90FEEB00308476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		182AB6012C90FEEB00308476 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		182AB6072C90FEEB00308476 /* ScreenSharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenSharingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182AB60B2C90FEEB00308476 /* ScreenSharingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingTests.swift; sourceTree = "<group>"; };
+		182AB6112C90FEEB00308476 /* ScreenSharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenSharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182AB6152C90FEEB00308476 /* ScreenSharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingUITests.swift; sourceTree = "<group>"; };
+		182AB6172C90FEEB00308476 /* ScreenSharingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		182AB6262C9101B000308476 /* BroadcastActivityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastActivityHandler.swift; sourceTree = "<group>"; };
+		182AB62E2C9109E900308476 /* ScreenShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		182AB6302C9109E900308476 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		182AB6332C9109E900308476 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		182AB6352C9109E900308476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182AB63A2C9109E900308476 /* ScreenShareExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenShareExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		182AB63C2C9109E900308476 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		182AB63F2C9109E900308476 /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		182AB6412C9109E900308476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182AB64F2C910C3C00308476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		18F2824B2C93A46B0097695F /* CallingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182AB5F42C90FEEA00308476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F282422C9398BF0097695F /* StreamVideoSwiftUI in Frameworks */,
+				18F282442C9398BF0097695F /* StreamVideoUIKit in Frameworks */,
+				18F282402C9398BF0097695F /* StreamVideo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB6042C90FEEB00308476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB60E2C90FEEB00308476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB62B2C9109E900308476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB6312C9109E900308476 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB6372C9109E900308476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB63B2C9109E900308476 /* ReplayKit.framework in Frameworks */,
+				182AB63D2C9109E900308476 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182AB5EE2C90FEEA00308476 = {
+			isa = PBXGroup;
+			children = (
+				182AB5F92C90FEEA00308476 /* ScreenSharing */,
+				182AB6002C90FEEB00308476 /* Preview Content */,
+				182AB60A2C90FEEB00308476 /* ScreenSharingTests */,
+				182AB6142C90FEEB00308476 /* ScreenSharingUITests */,
+				182AB6322C9109E900308476 /* ScreenShareExtension */,
+				182AB63E2C9109E900308476 /* ScreenShareExtensionSetupUI */,
+				182AB62F2C9109E900308476 /* Frameworks */,
+				182AB5F82C90FEEA00308476 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		182AB5F82C90FEEA00308476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182AB5F72C90FEEA00308476 /* ScreenSharing.app */,
+				182AB6072C90FEEB00308476 /* ScreenSharingTests.xctest */,
+				182AB6112C90FEEB00308476 /* ScreenSharingUITests.xctest */,
+				182AB62E2C9109E900308476 /* ScreenShareExtension.appex */,
+				182AB63A2C9109E900308476 /* ScreenShareExtensionSetupUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182AB5F92C90FEEA00308476 /* ScreenSharing */ = {
+			isa = PBXGroup;
+			children = (
+				182AB5FA2C90FEEA00308476 /* ScreenSharingApp.swift */,
+				18F282452C939D3A0097695F /* View Models */,
+				18F282482C93A41F0097695F /* Views  */,
+				18F282512C93A5F00097695F /* Helpers  */,
+				182AB5FE2C90FEEB00308476 /* Assets.xcassets */,
+				182AB64F2C910C3C00308476 /* Info.plist */,
+			);
+			path = ScreenSharing;
+			sourceTree = "<group>";
+		};
+		182AB6002C90FEEB00308476 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				182AB6012C90FEEB00308476 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		182AB60A2C90FEEB00308476 /* ScreenSharingTests */ = {
+			isa = PBXGroup;
+			children = (
+				182AB60B2C90FEEB00308476 /* ScreenSharingTests.swift */,
+			);
+			path = ScreenSharingTests;
+			sourceTree = "<group>";
+		};
+		182AB6142C90FEEB00308476 /* ScreenSharingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				182AB6152C90FEEB00308476 /* ScreenSharingUITests.swift */,
+				182AB6172C90FEEB00308476 /* ScreenSharingUITestsLaunchTests.swift */,
+			);
+			path = ScreenSharingUITests;
+			sourceTree = "<group>";
+		};
+		182AB62F2C9109E900308476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				182AB6302C9109E900308476 /* ReplayKit.framework */,
+				182AB63C2C9109E900308476 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		182AB6322C9109E900308476 /* ScreenShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				182AB6332C9109E900308476 /* SampleHandler.swift */,
+				182AB6352C9109E900308476 /* Info.plist */,
+			);
+			path = ScreenShareExtension;
+			sourceTree = "<group>";
+		};
+		182AB63E2C9109E900308476 /* ScreenShareExtensionSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				182AB63F2C9109E900308476 /* BroadcastSetupViewController.swift */,
+				182AB6412C9109E900308476 /* Info.plist */,
+			);
+			path = ScreenShareExtensionSetupUI;
+			sourceTree = "<group>";
+		};
+		18F282452C939D3A0097695F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				18F2824B2C93A46B0097695F /* CallingVM.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		18F282482C93A41F0097695F /* Views  */ = {
+			isa = PBXGroup;
+			children = (
+				182AB5FC2C90FEEA00308476 /* ScreenRecordingView.swift */,
+			);
+			path = "Views ";
+			sourceTree = "<group>";
+		};
+		18F282512C93A5F00097695F /* Helpers  */ = {
+			isa = PBXGroup;
+			children = (
+				182AB6262C9101B000308476 /* BroadcastActivityHandler.swift */,
+			);
+			path = "Helpers ";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182AB5F62C90FEEA00308476 /* ScreenSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182AB61B2C90FEEB00308476 /* Build configuration list for PBXNativeTarget "ScreenSharing" */;
+			buildPhases = (
+				182AB5F32C90FEEA00308476 /* Sources */,
+				182AB5F42C90FEEA00308476 /* Frameworks */,
+				182AB5F52C90FEEA00308476 /* Resources */,
+				182AB64E2C9109E900308476 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182AB6432C9109E900308476 /* PBXTargetDependency */,
+				182AB6462C9109E900308476 /* PBXTargetDependency */,
+			);
+			name = ScreenSharing;
+			packageProductDependencies = (
+				18F2823F2C9398BF0097695F /* StreamVideo */,
+				18F282412C9398BF0097695F /* StreamVideoSwiftUI */,
+				18F282432C9398BF0097695F /* StreamVideoUIKit */,
+			);
+			productName = ScreenSharing;
+			productReference = 182AB5F72C90FEEA00308476 /* ScreenSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		182AB6062C90FEEB00308476 /* ScreenSharingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182AB61E2C90FEEB00308476 /* Build configuration list for PBXNativeTarget "ScreenSharingTests" */;
+			buildPhases = (
+				182AB6032C90FEEB00308476 /* Sources */,
+				182AB6042C90FEEB00308476 /* Frameworks */,
+				182AB6052C90FEEB00308476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182AB6092C90FEEB00308476 /* PBXTargetDependency */,
+			);
+			name = ScreenSharingTests;
+			productName = ScreenSharingTests;
+			productReference = 182AB6072C90FEEB00308476 /* ScreenSharingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		182AB6102C90FEEB00308476 /* ScreenSharingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182AB6212C90FEEB00308476 /* Build configuration list for PBXNativeTarget "ScreenSharingUITests" */;
+			buildPhases = (
+				182AB60D2C90FEEB00308476 /* Sources */,
+				182AB60E2C90FEEB00308476 /* Frameworks */,
+				182AB60F2C90FEEB00308476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182AB6132C90FEEB00308476 /* PBXTargetDependency */,
+			);
+			name = ScreenSharingUITests;
+			productName = ScreenSharingUITests;
+			productReference = 182AB6112C90FEEB00308476 /* ScreenSharingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		182AB62D2C9109E900308476 /* ScreenShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182AB64B2C9109E900308476 /* Build configuration list for PBXNativeTarget "ScreenShareExtension" */;
+			buildPhases = (
+				182AB62A2C9109E900308476 /* Sources */,
+				182AB62B2C9109E900308476 /* Frameworks */,
+				182AB62C2C9109E900308476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenShareExtension;
+			productName = ScreenShareExtension;
+			productReference = 182AB62E2C9109E900308476 /* ScreenShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		182AB6392C9109E900308476 /* ScreenShareExtensionSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182AB6482C9109E900308476 /* Build configuration list for PBXNativeTarget "ScreenShareExtensionSetupUI" */;
+			buildPhases = (
+				182AB6362C9109E900308476 /* Sources */,
+				182AB6372C9109E900308476 /* Frameworks */,
+				182AB6382C9109E900308476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenShareExtensionSetupUI;
+			productName = ScreenShareExtensionSetupUI;
+			productReference = 182AB63A2C9109E900308476 /* ScreenShareExtensionSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182AB5EF2C90FEEA00308476 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					182AB5F62C90FEEA00308476 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					182AB6062C90FEEB00308476 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 182AB5F62C90FEEA00308476;
+					};
+					182AB6102C90FEEB00308476 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 182AB5F62C90FEEA00308476;
+					};
+					182AB62D2C9109E900308476 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					182AB6392C9109E900308476 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 182AB5F22C90FEEA00308476 /* Build configuration list for PBXProject "ScreenSharing" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182AB5EE2C90FEEA00308476;
+			packageReferences = (
+				18F2823E2C9398BF0097695F /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
+			productRefGroup = 182AB5F82C90FEEA00308476 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182AB5F62C90FEEA00308476 /* ScreenSharing */,
+				182AB6062C90FEEB00308476 /* ScreenSharingTests */,
+				182AB6102C90FEEB00308476 /* ScreenSharingUITests */,
+				182AB62D2C9109E900308476 /* ScreenShareExtension */,
+				182AB6392C9109E900308476 /* ScreenShareExtensionSetupUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		182AB5F52C90FEEA00308476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB6022C90FEEB00308476 /* Preview Assets.xcassets in Resources */,
+				182AB5FF2C90FEEB00308476 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB6052C90FEEB00308476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB60F2C90FEEB00308476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB62C2C9109E900308476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB6382C9109E900308476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182AB5F32C90FEEA00308476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB5FD2C90FEEA00308476 /* ScreenRecordingView.swift in Sources */,
+				18F2824C2C93A46B0097695F /* CallingVM.swift in Sources */,
+				182AB6272C9101B000308476 /* BroadcastActivityHandler.swift in Sources */,
+				182AB5FB2C90FEEA00308476 /* ScreenSharingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB6032C90FEEB00308476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB60C2C90FEEB00308476 /* ScreenSharingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB60D2C90FEEB00308476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB6162C90FEEB00308476 /* ScreenSharingUITests.swift in Sources */,
+				182AB6182C90FEEB00308476 /* ScreenSharingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB62A2C9109E900308476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB6342C9109E900308476 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182AB6362C9109E900308476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182AB6402C9109E900308476 /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182AB6092C90FEEB00308476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182AB5F62C90FEEA00308476 /* ScreenSharing */;
+			targetProxy = 182AB6082C90FEEB00308476 /* PBXContainerItemProxy */;
+		};
+		182AB6132C90FEEB00308476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182AB5F62C90FEEA00308476 /* ScreenSharing */;
+			targetProxy = 182AB6122C90FEEB00308476 /* PBXContainerItemProxy */;
+		};
+		182AB6432C9109E900308476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182AB6392C9109E900308476 /* ScreenShareExtensionSetupUI */;
+			targetProxy = 182AB6422C9109E900308476 /* PBXContainerItemProxy */;
+		};
+		182AB6462C9109E900308476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182AB62D2C9109E900308476 /* ScreenShareExtension */;
+			targetProxy = 182AB6452C9109E900308476 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		182AB6192C90FEEB00308476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		182AB61A2C90FEEB00308476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		182AB61C2C90FEEB00308476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenSharing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera for screen sharing ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone for screen sharing.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182AB61D2C90FEEB00308476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenSharing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera for screen sharing ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone for screen sharing.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		182AB61F2C90FEEB00308476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenSharing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScreenSharing";
+			};
+			name = Debug;
+		};
+		182AB6202C90FEEB00308476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenSharing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScreenSharing";
+			};
+			name = Release;
+		};
+		182AB6222C90FEEB00308476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScreenSharing;
+			};
+			name = Debug;
+		};
+		182AB6232C90FEEB00308476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScreenSharing;
+			};
+			name = Release;
+		};
+		182AB6492C9109E900308476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharing.ScreenShareExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182AB64A2C9109E900308476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharing.ScreenShareExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		182AB64C2C9109E900308476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharing.ScreenShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182AB64D2C9109E900308476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8293UBW52;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcoder.ScreenSharing.ScreenShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182AB5F22C90FEEA00308476 /* Build configuration list for PBXProject "ScreenSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182AB6192C90FEEB00308476 /* Debug */,
+				182AB61A2C90FEEB00308476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182AB61B2C90FEEB00308476 /* Build configuration list for PBXNativeTarget "ScreenSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182AB61C2C90FEEB00308476 /* Debug */,
+				182AB61D2C90FEEB00308476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182AB61E2C90FEEB00308476 /* Build configuration list for PBXNativeTarget "ScreenSharingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182AB61F2C90FEEB00308476 /* Debug */,
+				182AB6202C90FEEB00308476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182AB6212C90FEEB00308476 /* Build configuration list for PBXNativeTarget "ScreenSharingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182AB6222C90FEEB00308476 /* Debug */,
+				182AB6232C90FEEB00308476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182AB6482C9109E900308476 /* Build configuration list for PBXNativeTarget "ScreenShareExtensionSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182AB6492C9109E900308476 /* Debug */,
+				182AB64A2C9109E900308476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182AB64B2C9109E900308476 /* Build configuration list for PBXNativeTarget "ScreenShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182AB64C2C9109E900308476 /* Debug */,
+				182AB64D2C9109E900308476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18F2823E2C9398BF0097695F /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18F2823F2C9398BF0097695F /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18F2823E2C9398BF0097695F /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		18F282412C9398BF0097695F /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18F2823E2C9398BF0097695F /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+		18F282432C9398BF0097695F /* StreamVideoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18F2823E2C9398BF0097695F /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 182AB5EF2C90FEEA00308476 /* Project object */;
+}
